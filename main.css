@@ -14,8 +14,21 @@ body {
 .txt-yellow {
   color: #FDD835; }
 
+.montserrat {
+  font-family: 'Montserrat', sans-serif; }
+
 .txt-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-blue-small {
+  background: linear-gradient(to right, #04ACF4, #04ACF4, #873BCB, #873BCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-teal-small {
+  background: linear-gradient(to right, #95E19F, #95E19F, #24B4E3, #24B4E3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -27,15 +40,18 @@ body {
 .bg-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6); }
 
+.bg-bd-gradient:hover {
+  background: linear-gradient(to right, #95E19F, #24B4E3); }
+
 .bg-diag-left-right-bd-gradient {
   background: #C04BAE;
-  background: -webkit-linear-gradient(-120deg, #9446D6, #FF3D7B);
+  background: -webkit-linear-gradient(-120deg, #9446D6, #9446D6, #FF3D7B);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -o-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -moz-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-60deg, #9446D6, #FF3D7B);
+  background: linear-gradient(-60deg, #9446D6, #9446D6, #FF3D7B);
   /* Standard syntax */ }
 
 .footer-page {
@@ -56,7 +72,9 @@ body {
           .footer-page .footer-box .bottom-box .logo-box {
             text-align: center; } }
         .footer-page .footer-box .bottom-box .logo-box img {
-          margin-right: 20px; }
+          margin-right: 20px;
+          margin-top: 10px;
+          width: 380px; }
           @media screen and (max-width: 992px) {
             .footer-page .footer-box .bottom-box .logo-box img {
               width: 60px;
@@ -75,13 +93,27 @@ body {
           .footer-page .footer-box .bottom-box .social-box {
             text-align: center;
             margin-top: 30px; } }
+        .footer-page .footer-box .bottom-box .social-box .logo {
+          margin-left: 30px;
+          cursor: pointer; }
+          .footer-page .footer-box .bottom-box .social-box .logo * {
+            width: 42px;
+            height: 42px; }
+        .footer-page .footer-box .bottom-box .social-box .logo:hover * {
+          fill: #59C9C3;
+          width: 42px;
+          height: 42px; }
         .footer-page .footer-box .bottom-box .social-box img {
           margin-left: 30px; }
+          .footer-page .footer-box .bottom-box .social-box img * {
+            fill: green; }
           @media screen and (max-width: 992px) {
             .footer-page .footer-box .bottom-box .social-box img {
               margin: 0 15px;
               width: 35px;
               height: 35px; } }
+        .footer-page .footer-box .bottom-box .social-box img:hover * {
+          fill: #59C9C3; }
         .footer-page .footer-box .bottom-box .social-box .email-icon {
           width: 48px; }
 body {
@@ -100,8 +132,21 @@ body {
 .txt-yellow {
   color: #FDD835; }
 
+.montserrat, .goal-page .goal-box h1, .goal-page .goal-box .btn-advice {
+  font-family: 'Montserrat', sans-serif; }
+
 .txt-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-blue-small {
+  background: linear-gradient(to right, #04ACF4, #04ACF4, #873BCB, #873BCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-teal-small {
+  background: linear-gradient(to right, #95E19F, #95E19F, #24B4E3, #24B4E3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -113,15 +158,18 @@ body {
 .bg-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6); }
 
+.bg-bd-gradient:hover {
+  background: linear-gradient(to right, #95E19F, #24B4E3); }
+
 .bg-diag-left-right-bd-gradient {
   background: #C04BAE;
-  background: -webkit-linear-gradient(-120deg, #9446D6, #FF3D7B);
+  background: -webkit-linear-gradient(-120deg, #9446D6, #9446D6, #FF3D7B);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -o-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -moz-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-60deg, #9446D6, #FF3D7B);
+  background: linear-gradient(-60deg, #9446D6, #9446D6, #FF3D7B);
   /* Standard syntax */ }
 
 .goal-page {
@@ -162,15 +210,20 @@ body {
           margin-top: 70px;
           font-size: 18px;
           line-height: 1.8em; } }
+    .goal-page .goal-box .icon-wrapper {
+      margin-right: 15px;
+      vertical-align: middle; }
     .goal-page .goal-box .btn-advice {
       margin-top: 80px;
       background-color: transparent;
       border: 2px solid #C04BAE;
       padding: 10px 35px;
-      font-weight: 700;
+      font-weight: 500;
       color: #fff; }
     .goal-page .goal-box .btn-advice:focus {
       outline: none; }
+    .goal-page .goal-box .btn-advice:hover {
+      border: 2px solid #59C9C3; }
 body {
   width: 100%;
   font-family: 'Lato', sans-serif; }
@@ -187,8 +240,21 @@ body {
 .txt-yellow {
   color: #FDD835; }
 
+.montserrat, .home-page .text-container h1, .home-page .text-container h2, .home-page .btn-join {
+  font-family: 'Montserrat', sans-serif; }
+
 .txt-bd-gradient, .home-page .text-container h2 {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-blue-small {
+  background: linear-gradient(to right, #04ACF4, #04ACF4, #873BCB, #873BCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-teal-small {
+  background: linear-gradient(to right, #95E19F, #95E19F, #24B4E3, #24B4E3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -200,15 +266,18 @@ body {
 .bg-bd-gradient, .home-page .btn-join {
   background: linear-gradient(to right, #FF3D7B, #9446D6); }
 
+.bg-bd-gradient:hover, .home-page .btn-join:hover {
+  background: linear-gradient(to right, #95E19F, #24B4E3); }
+
 .bg-diag-left-right-bd-gradient {
   background: #C04BAE;
-  background: -webkit-linear-gradient(-120deg, #9446D6, #FF3D7B);
+  background: -webkit-linear-gradient(-120deg, #9446D6, #9446D6, #FF3D7B);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -o-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -moz-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-60deg, #9446D6, #FF3D7B);
+  background: linear-gradient(-60deg, #9446D6, #9446D6, #FF3D7B);
   /* Standard syntax */ }
 
 .home-page {
@@ -229,13 +298,13 @@ body {
     padding-top: 30px; }
     .home-page .text-container h1 {
       font-size: 53px;
-      font-weight: 900;
+      font-weight: 700;
       color: #0F0A15; }
     .home-page .text-container h2 {
       font-weight: 400;
       color: #8D8D8D;
       font-size: 35px;
-      line-height: 40px; }
+      line-height: 38px; }
     .home-page .text-container .subtext-box {
       margin-top: 37px;
       margin-bottom: 25px; }
@@ -264,12 +333,25 @@ body {
 .txt-yellow, .info-page .info-box .yellow-text {
   color: #FDD835; }
 
+.montserrat, .info-page .info-box h1 {
+  font-family: 'Montserrat', sans-serif; }
+
 .txt-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.txt-bd-gradient-pink-small, .info-page .info-box .text-step1, .info-page .info-box .div-step1, .info-page .info-box .text-step2, .info-page .info-box .div-step2 {
+.txt-bd-gradient-blue-small, .info-page .info-box .text-step3, .info-page .info-box .div-step3 {
+  background: linear-gradient(to right, #04ACF4, #04ACF4, #873BCB, #873BCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-teal-small, .info-page .info-box .text-step2, .info-page .info-box .div-step2 {
+  background: linear-gradient(to right, #95E19F, #95E19F, #24B4E3, #24B4E3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-pink-small, .info-page .info-box .text-step1, .info-page .info-box .div-step1 {
   background: linear-gradient(to right, #FF3D7B, #FF3D7B, #9446D6, #9446D6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -277,15 +359,18 @@ body {
 .bg-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6); }
 
+.bg-bd-gradient:hover {
+  background: linear-gradient(to right, #95E19F, #24B4E3); }
+
 .bg-diag-left-right-bd-gradient {
   background: #C04BAE;
-  background: -webkit-linear-gradient(-120deg, #9446D6, #FF3D7B);
+  background: -webkit-linear-gradient(-120deg, #9446D6, #9446D6, #FF3D7B);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -o-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -moz-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-60deg, #9446D6, #FF3D7B);
+  background: linear-gradient(-60deg, #9446D6, #9446D6, #FF3D7B);
   /* Standard syntax */ }
 
 .info-page {
@@ -304,7 +389,7 @@ body {
       .info-page .info-box {
         width: 90%; } }
     .info-page .info-box h1 {
-      font-weight: 700;
+      font-weight: 500;
       line-height: 1.5em;
       font-size: 44px; }
       @media screen and (max-width: 992px) {
@@ -339,6 +424,8 @@ body {
       padding: 0 15px; }
     .info-page .info-box .div-step2 {
       padding: 0 15px; }
+    .info-page .info-box .div-step3 {
+      padding: 0 15px; }
     .info-page .info-box .yellow-text {
       padding: 0 15px; }
 body {
@@ -357,8 +444,21 @@ body {
 .txt-yellow {
   color: #FDD835; }
 
+.montserrat, .join-form-page .form-box h1, .join-form-page .form-box .btn-yes {
+  font-family: 'Montserrat', sans-serif; }
+
 .txt-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-blue-small {
+  background: linear-gradient(to right, #04ACF4, #04ACF4, #873BCB, #873BCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-teal-small {
+  background: linear-gradient(to right, #95E19F, #95E19F, #24B4E3, #24B4E3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -370,15 +470,18 @@ body {
 .bg-bd-gradient, .join-form-page .form-box .btn-yes {
   background: linear-gradient(to right, #FF3D7B, #9446D6); }
 
+.bg-bd-gradient:hover, .join-form-page .form-box .btn-yes:hover {
+  background: linear-gradient(to right, #95E19F, #24B4E3); }
+
 .bg-diag-left-right-bd-gradient {
   background: #C04BAE;
-  background: -webkit-linear-gradient(-120deg, #9446D6, #FF3D7B);
+  background: -webkit-linear-gradient(-120deg, #9446D6, #9446D6, #FF3D7B);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -o-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -moz-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-60deg, #9446D6, #FF3D7B);
+  background: linear-gradient(-60deg, #9446D6, #9446D6, #FF3D7B);
   /* Standard syntax */ }
 
 .join-form-page {
@@ -397,7 +500,7 @@ body {
         width: 90%;
         margin: 80px auto; } }
     .join-form-page .form-box h1 {
-      font-weight: 400;
+      font-weight: 500;
       font-size: 40px;
       line-height: 1.8em; }
       @media screen and (max-width: 992px) {
@@ -498,8 +601,21 @@ body {
 .txt-yellow {
   color: #FDD835; }
 
+.montserrat, .navbar-default .navbar-nav li, .nav-join {
+  font-family: 'Montserrat', sans-serif; }
+
 .txt-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-blue-small {
+  background: linear-gradient(to right, #04ACF4, #04ACF4, #873BCB, #873BCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-teal-small {
+  background: linear-gradient(to right, #95E19F, #95E19F, #24B4E3, #24B4E3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -511,15 +627,18 @@ body {
 .bg-bd-gradient, .container-fluid .btn-join {
   background: linear-gradient(to right, #FF3D7B, #9446D6); }
 
+.bg-bd-gradient:hover, .container-fluid .btn-join:hover {
+  background: linear-gradient(to right, #95E19F, #24B4E3); }
+
 .bg-diag-left-right-bd-gradient {
   background: #C04BAE;
-  background: -webkit-linear-gradient(-120deg, #9446D6, #FF3D7B);
+  background: -webkit-linear-gradient(-120deg, #9446D6, #9446D6, #FF3D7B);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -o-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -moz-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-60deg, #9446D6, #FF3D7B);
+  background: linear-gradient(-60deg, #9446D6, #9446D6, #FF3D7B);
   /* Standard syntax */ }
 
 .container-fluid {
@@ -536,11 +655,16 @@ body {
 .navbar {
   background-color: #fff;
   border: none; }
+  .navbar .nav-logo {
+    width: 80px;
+    cursor: pointer;
+    margin-top: -10px; }
 
-.navbar-default .navbar-nav li a {
+.navbar-default .navbar-nav li {
+  cursor: pointer;
   font-size: 18px;
   color: #8D8D8D;
-  font-weight: 400;
+  font-weight: 300;
   margin-right: 20px; }
 
 .nav-join {
@@ -561,8 +685,21 @@ body {
 .txt-yellow {
   color: #FDD835; }
 
+.montserrat, .overview-page .info-box h1, .overview-page .info-box .btn-learn-more {
+  font-family: 'Montserrat', sans-serif; }
+
 .txt-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-blue-small {
+  background: linear-gradient(to right, #04ACF4, #04ACF4, #873BCB, #873BCB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.txt-bd-gradient-teal-small {
+  background: linear-gradient(to right, #95E19F, #95E19F, #24B4E3, #24B4E3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -574,15 +711,18 @@ body {
 .bg-bd-gradient {
   background: linear-gradient(to right, #FF3D7B, #9446D6); }
 
+.bg-bd-gradient:hover {
+  background: linear-gradient(to right, #95E19F, #24B4E3); }
+
 .bg-diag-left-right-bd-gradient, .overview-page {
   background: #C04BAE;
-  background: -webkit-linear-gradient(-120deg, #9446D6, #FF3D7B);
+  background: -webkit-linear-gradient(-120deg, #9446D6, #9446D6, #FF3D7B);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -o-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(-90deg, #9446D6, #FF3D7B);
+  background: -moz-linear-gradient(-90deg, #9446D6, #9446D6, #FF3D7B);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(-60deg, #9446D6, #FF3D7B);
+  background: linear-gradient(-60deg, #9446D6, #9446D6, #FF3D7B);
   /* Standard syntax */ }
 
 .overview-page {
@@ -621,13 +761,18 @@ body {
           font-size: 20px;
           margin-top: 30px;
           margin-bottom: 20px; } }
+    .overview-page .info-box .icon-wrapper {
+      margin-right: 10px;
+      vertical-align: middle; }
     .overview-page .info-box .btn-learn-more {
       margin-top: 20px;
       margin-bottom: 20px;
       background-color: transparent;
-      border: 2px solid #282230;
+      border: 2px solid #C04BAE;
       color: #fff;
-      font-weight: 400; }
+      font-weight: 500; }
+    .overview-page .info-box .btn-learn-more:hover {
+      border: 2px solid #59C9C3; }
     .overview-page .info-box h3 {
       margin-left: 20px;
       margin-top: 30px;
