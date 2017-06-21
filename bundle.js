@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0acb174887651da6a59c"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "c6c84d769dc6e254cde4"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -9529,57 +9529,111 @@ class Footer extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
 
 
 class JoinForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      formSubmitted: false,
+      name: null
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleSubmit(e) {
+    e.preventDefault();
+    const data = {
+      name: this.nameInput.value,
+      email: this.emailInput.value
+    };
+    $.ajax({
+      type: 'POST',
+      url: 'http://braindumpapp.herokuapp.com/landing/api/signups/',
+      data: data
+    });
+    this.setState({ formSubmitted: true, name: this.nameInput.value });
+  }
+  get formComponent() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'row' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'col-md-12' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h1',
+          null,
+          'Let\'s make burnout history'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h2',
+          null,
+          'We are excited and we hope you are too! Stay up-to-date on our progress, and get invited to be a beta user of Braindump.  You can also follow us on social media (links below).'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h2',
+          { onClick: this.handleSubmit },
+          'Got a question? Reach out to us directly at braindumpapp@gmail.com'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'form',
+          {
+            ref: form => {
+              this.form = form;
+            },
+            className: 'form', onSubmit: this.handleSubmit },
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'h3',
+            null,
+            'Name'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
+            ref: input => {
+              this.nameInput = input;
+            },
+            type: 'text', className: 'name-input', name: 'name', placeholder: 'Enter Name', required: 'true' }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'h3',
+            null,
+            'Email'
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', {
+            ref: input => {
+              this.emailInput = input;
+            },
+            type: 'email', className: 'email-input', name: 'email', placeholder: 'Enter Email Address', required: 'true' }),
+          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+            'button',
+            { type: 'submit', className: 'btn btn-yes' },
+            'Join the Waitlist'
+          )
+        )
+      )
+    );
+  }
+  get submittedComponent() {
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'div',
+      { className: 'row' },
+      __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+        'div',
+        { className: 'col-md-12' },
+        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+          'h1',
+          { className: 'confirm-text' },
+          'Thank you for signing up, ',
+          this.state.name,
+          '!'
+        )
+      )
+    );
+  }
   render() {
+    const component = this.state.formSubmitted ? this.submittedComponent : this.formComponent;
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
       { className: 'container join-form-page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'form-box' },
-        __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-          'div',
-          { className: 'row' },
-          __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-            'div',
-            { className: 'col-md-12' },
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'h1',
-              null,
-              'Let\'s make burnout history'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'h2',
-              null,
-              'We are excited and we hope you are too! Stay up-to-date on our progress, and get invited to be a beta user of Braindump.  You can also follow us on social media (links below).'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'h2',
-              null,
-              'Got a question? Reach out to us directly at braindumpapp@gmail.com'
-            ),
-            __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-              'form',
-              { className: 'form', action: 'https://docs.google.com/forms/d/e/1FAIpQLScTdA9clxmHu3RAnH8MAQP6I3_oZzpB5LmMMeTkZAMHQzW7kg/formResponse', target: '_self', method: 'POST', id: 'mG61Hd', target: '_blank' },
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'h3',
-                null,
-                'Name'
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'name-input', name: 'entry.1283099238', placeholder: 'Enter Name' }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'h3',
-                null,
-                'Email'
-              ),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('input', { type: 'text', className: 'email-input', name: 'entry.872796341', placeholder: 'Enter Email Address' }),
-              __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
-                'button',
-                { type: 'submit', className: 'btn btn-yes' },
-                'Join the Waitlist'
-              )
-            )
-          )
-        )
+        component
       ),
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__footer_footer_jsx__["a" /* default */], null)
     );
