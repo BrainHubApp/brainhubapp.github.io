@@ -671,12 +671,34 @@ body {
     font-size: 18px;
     margin-top: -14px; }
 
+@media screen and (max-width: 1042px) {
+  .navbar-collapse.collapse {
+    display: none !important; }
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+  .navbar-header .collapse, .navbar-toggle {
+    display: block !important; }
+  .navbar-header {
+    float: none; }
+  .navbar-default .navbar-nav li {
+    width: 100%; } }
+
 .navbar {
   background-color: #fff;
   border: none; }
   .navbar .nav-logo {
     width: 75px;
     cursor: pointer; }
+  .navbar .navbar-toggle {
+    border: 1px solid #C04BAE;
+    height: 45px; }
+  .navbar .navbar-toggle:hover {
+    background-color: #fff; }
+  .navbar .navbar-toggle:focus {
+    background-color: #fff;
+    border: 1px solid #59C9C3; }
+    .navbar .navbar-toggle:focus * {
+      fill: #59C9C3; }
 
 .navbar-default .navbar-nav li {
   cursor: pointer;
