@@ -59,7 +59,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "61ab87839e12de6d56d3"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "42e53c27be699d08f30b"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
@@ -10232,7 +10232,7 @@ class JoinForm extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
     const component = this.state.formSubmitted ? this.submittedComponent : this.formComponent;
     return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       'div',
-      { className: 'container join-form-page' },
+      { id: 'signup-page', className: 'container join-form-page' },
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'div',
         { className: 'form-box' },
@@ -14543,7 +14543,7 @@ class Info extends __WEBPACK_IMPORTED_MODULE_0_react___default.a.Component {
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'h2',
               { className: 'text-step3' },
-              'Step 3. Automate'
+              'Step 3. Experiment'
             ),
             __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
               'h4',
