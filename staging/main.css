@@ -255,7 +255,7 @@ body {
 .txt-yellow {
   color: #FDD835; }
 
-.montserrat, .home-page .text-container h1, .home-page .text-container h2, .home-page .btn-join {
+.montserrat, .home-page .text-container h1, .home-page .text-container h2, .home-page .btn-join, .home-page .watch-video-container a {
   font-family: 'Montserrat', sans-serif; }
 
 .txt-center {
@@ -264,7 +264,7 @@ body {
 .txt-left {
   text-align: left; }
 
-.txt-bd-gradient, .home-page .text-container h2 {
+.txt-bd-gradient, .home-page .text-container h2, .home-page .watch-video-container a {
   background: linear-gradient(to right, #FF3D7B, #9446D6, #9446D6, #9446D6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
@@ -349,6 +349,11 @@ body {
     background-color: #FDD835;
     color: #fff;
     margin-top: 20px; }
+  .home-page .watch-video-container {
+    margin: 30px 0 0 20px; }
+    .home-page .watch-video-container a {
+      font-size: 18px;
+      font-weight: 500; }
 
 .empty-row {
   background: #f2f2f2;
